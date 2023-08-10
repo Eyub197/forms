@@ -1,0 +1,28 @@
+:root{
+    --background-color: #faedcd
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+ background-color: var(--background-color);
+}
+
+main{
+    background-image: url(form-img.jpg);
+    display: flex;
+    background-repeat: no-repeat;
+}
+
+.svg-container{
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
