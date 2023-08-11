@@ -1,28 +1,47 @@
 :root{
     --background-color: #faedcd
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-html{
- background-color: var(--background-color);
+main{
+    width: 100vh;
+    height: 100vh;
 }
 
-main{
-    background-image: url(form-img.jpg);
+
+main, .svg-container{
     display: flex;
+    flex-flow: row wrap;
+}
+
+.img-container{   
+    background-image: url(form-img.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 60vh;
 }
 
 .svg-container{
-    position: absolute;
+    position: relative;
     top: 40%;
-    left: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(250, 237, 205, 0.5);
+    padding: 20px;
+    gap: 10px;
+    
+}
+
+
+.svg-text{
+    font-weight: bolder;
+    font-size: 2rem;
+    color: aliceblue;
 }
