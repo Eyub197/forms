@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -49,21 +48,25 @@ main, .svg-container{
     flex-direction: column;
     width: 60vw;
     background-color: var(--background-color);
+    gap: 10px;
 }
 
 .text{
     height: 20vh;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
-    margin: 20px 0px 0px 20px;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+
 }
 
 .text >  p {
     font-size: 2rem;
     color: #54627B;
-    font-weight: 800;
+    font-weight: bolder;
 }
 
 .form{
@@ -76,21 +79,32 @@ main, .svg-container{
 }
 
 .form-text{
+    text-align: center;
     width: 100%;
-    font-size: 2.1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #710117;
+    padding: 30px;
 }
 
 .input{
     display: flex;
     flex-flow: column wrap; 
-    gap: 20px
 }
 
 
 input{
+    margin-top: 10px;
     width: 500px;
-    height: 50px;
-    padding-left: 5px;
+    height: 55px;
+    padding-left: 10px;
     border-radius: 10pt;
     border: 3px solid  #54627B;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+label{
+    font-size: 1.5rem;
+    font-weight: bolder;
 }
