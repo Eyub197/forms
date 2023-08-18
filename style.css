@@ -6,7 +6,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif; */
+    font-family: sans-serif;
 }
 
 main{
@@ -70,7 +71,7 @@ main, .svg-container{
 }
 
 .form{
-    height: 60vh;
+    height: 50vh;
     padding: 20px;
     display: flex;
     flex-flow: row wrap;
@@ -107,4 +108,31 @@ input{
 label{
     font-size: 1.5rem;
     font-weight: bolder;
+}
+
+.sign-in{
+    display: flex;
+    justify-content: center;
+    gap: 10px
+}
+
+.sign-in > button{
+   width: 160px;
+   height: 70px;
+   border-radius: 10pt;
+   font-size: 2rem;
+   background-color: inherit;
+   border: 1px solid black ;
+   transition: background-color 0.5s ease;
+}
+
+.sign-in > button:hover{
+    background-color: #710117;
+    color: white;
+    border: 1px solid white
+}
+
+.sign-in > p {
+    text-align: center;
+    font-size: 2rem;
 }
