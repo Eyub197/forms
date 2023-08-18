@@ -113,6 +113,7 @@ label{
 .sign-in{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px
 }
 
@@ -129,10 +130,20 @@ label{
 .sign-in > button:hover{
     background-color: #710117;
     color: white;
-    border: 1px solid white
+    border: 1px solid white;
 }
 
 .sign-in > p {
     text-align: center;
     font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+}
+
+a:hover{
+    color:#710117;
+    transform: scale(1.5);
 }
