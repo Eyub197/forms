@@ -19,23 +19,25 @@ main, .svg-container{
     display: flex;
 }
 
+    /*Left side*/
+
 .img-container{   
+    width: 40vw;
     background-image: url(form-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 40vw;
 }
 
 .svg-container{
-    position: relative;
-    top: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(250, 237, 205, 0.5);
-    padding: 20px;
     gap: 10px;
+    position: relative;
+    top: 40%;
+    padding: 20px;
+    background-color: rgba(250, 237, 205, 0.5);
 }
 
 .svg-text{
@@ -44,48 +46,56 @@ main, .svg-container{
     color: aliceblue;
 }
 
+        /*left side*/
+
+        /*right side-text*/
 .right-side{
     display: flex;
     flex-direction: column;
     width: 60vw;
-    background-color: var(--background-color);
     gap: 10px;
+    background-color: var(--background-color);
 }
 
 .text{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items:  flex-start;
     height: 20vh;
     width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
+    padding-top: 30px;
     font-weight: bold;
-
 }
 
 .text >  p {
+    font-weight: bolder;
     font-size: 2rem;
     color: #54627B;
-    font-weight: bolder;
 }
 
+    /*right side-text*/
+
+  
+    /*form*/
+
 .form{
-    height: 50vh;
-    padding: 20px;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    height: 50vh;
+    gap:10px;
+    padding: 20px;
     color: #710117;
-    gap:10px
 }
 
 .form-text{
-    text-align: center;
     width: 100%;
+    text-align: center;
+    padding: 30px;
     font-size: 2.5rem;
     font-weight: bold;
     color: #710117;
-    padding: 30px;
 }
 
 .input{
@@ -95,14 +105,29 @@ main, .svg-container{
 
 
 input{
-    margin-top: 10px;
     width: 500px;
     height: 55px;
+    margin-top: 10px;
     padding-left: 10px;
-    border-radius: 10pt;
-    border: 3px solid  #54627B;
     font-size: 25px;
     font-weight: bold;
+    border-radius: 10pt; 
+    transition: border-color 0.5s ease; /* Apply transition to border-color */
+}
+
+
+input:focus{
+    border: 4px solid #54627B;
+    outline: none;
+}
+
+input:invalid{
+   content: 'X';
+   color: red;
+}
+
+input:valid{
+    border-color: 3px solid green;
 }
 
 label{
@@ -120,17 +145,17 @@ label{
 .sign-in > button{
    width: 160px;
    height: 70px;
-   border-radius: 10pt;
    font-size: 2rem;
    background-color: inherit;
+   border-radius: 10pt;
    border: 1px solid black ;
    transition: background-color 0.5s ease;
 }
 
 .sign-in > button:hover{
     background-color: #710117;
-    color: white;
     border: 1px solid white;
+    color: white;
 }
 
 .sign-in > p {
@@ -147,3 +172,5 @@ a:hover{
     color:#710117;
     transform: scale(1.5);
 }
+
+/*form*/
