@@ -121,7 +121,7 @@ input:focus{
     outline: none;
 }
 
-input:invalid{
+input:invalid + p::after{
    content: 'X';
    color: red;
 }
